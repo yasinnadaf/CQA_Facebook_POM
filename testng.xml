@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <parameter name="browserName" value="chrome"/>
+    <test verbose="2" preserve-order="true" name="C:/CQAFacebookPOM">
+        <classes>
+            <class name="com.bridgelabz.selenium.test.FacebookTest">
+                <methods>
+                    <parameter name="userName" value="8208139338"/>
+                    <parameter name="password" value="Yasin@786"/>
+                    <include name="validateUrlNavigation"/>
+                    <include name="loginToFacebook"/>
+                    <include name="fileUploadFb"/>
+                    <include name="dashboardValidation_Success"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
